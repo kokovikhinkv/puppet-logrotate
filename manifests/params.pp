@@ -188,6 +188,7 @@ class logrotate::params {
   $manage_package     = true
   $root_user          = 'root'
   $rules_configdir    = "${configdir}/logrotate.d"
+  $cron_file_template = 'logrotate/etc/cron/logrotate.erb'
 
   # File modes (permissions)
   # - These may need to be moved to the osfamily case statement

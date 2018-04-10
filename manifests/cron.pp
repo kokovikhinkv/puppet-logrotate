@@ -39,6 +39,6 @@ define logrotate::cron (
     owner   => $logrotate::root_user,
     group   => $logrotate::root_group,
     mode    => $logrotate::cron_file_mode,
-    content => template('logrotate/etc/cron/logrotate.erb'),
+    content => template($logrotate::cron_file_template),
   }
 }

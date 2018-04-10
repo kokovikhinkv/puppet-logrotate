@@ -12,6 +12,7 @@ class logrotate (
   Integer[0,59] $cron_daily_minute       = $logrotate::params::cron_daily_minute,
   Integer[0,59] $cron_hourly_minute      = $logrotate::params::cron_hourly_minute,
   String $cron_hourly_file               = $logrotate::params::cron_hourly_file,
+  String $cron_file_template             = $logrotate::params::cron_file_template,
   Stdlib::Filemode $cron_file_mode       = $logrotate::params::cron_file_mode,
   String $configdir                      = $logrotate::params::configdir,
   String $logrotate_bin                  = $logrotate::params::logrotate_bin,
